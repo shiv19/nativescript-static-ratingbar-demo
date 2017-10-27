@@ -1,7 +1,7 @@
 # NativeScript Core, Static Star Rating Demo
 
 ### Screenshot
-[](screenshot.png)
+<img height="340" src="https://raw.githubusercontent.com/shiv19/nativescript-static-ratingbar-demo/master/screenshot.png" />
 
 ### Usage
 Copy the ratings folder to some place in your project
