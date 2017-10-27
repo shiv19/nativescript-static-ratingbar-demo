@@ -1,7 +1,7 @@
 # NativeScript Core, Static Star Rating Demo
 
 ### Screenshot
-[](/screenshot.png)
+[](screenshot.png)
 
 ### Usage
 Copy the ratings folder to some place in your project
