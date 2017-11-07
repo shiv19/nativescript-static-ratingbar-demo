@@ -1,13 +1,4 @@
-<Repeater id="ratingsBar" items="{{ items }}" loaded="loaded">
-	<Repeater.itemsLayout>
-		<StackLayout class="p-20" orientation="horizontal" />
-	</Repeater.itemsLayout>
-	<Repeater.itemTemplate>
-		<StackLayout orientation="vertical">
-			<Label 
-                class="fa"
-                fontColor="{{ color }}"
-                fontSize="30" marginLeft="2" marginRight="2" marginBottom="10" class="text-center" text="{{ icon }}" />
-		</StackLayout>
-	</Repeater.itemTemplate>
-</Repeater>
+<FlexboxLayout>
+	<Label id="ratingLabel"  finalRating="{{finalrating}}" loaded="ratingLabelLoaded" color="orange" textWrap="true" />
+	<Label marginLeft="3" text="{{ finalrating }}"/>
+</FlexboxLayout>
