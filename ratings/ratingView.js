@@ -1,32 +1,29 @@
 exports.ratingLabelLoaded = function(args) {
     let ratingLabel = args.object;
-    var textContent = "";
+    let textContent = "";
     setTimeout(() => {
-        var numberOfStars = args.object.finalRating;
+        let numberOfStars = args.object.finalRating;
+        numberOfStars = Math.round(numberOfStars * 2) / 2;
         const flooredVal = Math.floor(numberOfStars);
 
         let halfStars = false;
-        let totalStars = 5;
+        const totalStars = 5;
         if (Math.ceil(numberOfStars) !== Math.floor(numberOfStars)) {
-            if (Math.round(numberOfStars) !== Math.ceil(numberOfStars)) {
-                halfStars = true;
-                numberOfStars = flooredVal;
-            } else {
-                numberOfStars = flooredVal + 1;
-            }
+            halfStars = true;
+            numberOfStars = flooredVal;
         }
 
         for (let i = 0; i < numberOfStars; i++) {
-            textContent += "★";
+            textContent += "O";
         }
         if (halfStars) {
             numberOfStars = numberOfStars + 1;
-            textContent += "✫";
+            textContent += "o";
         }
         if (totalStars - numberOfStars > 0) {
-            let extra = totalStars - numberOfStars;
+            const extra = totalStars - numberOfStars;
             for (let i = 0; i < extra; i++) {
-                textContent += "☆";
+                textContent += "0";
             }
         }
         ratingLabel.text = textContent;
