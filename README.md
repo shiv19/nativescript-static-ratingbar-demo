@@ -33,7 +33,7 @@ xmlns:ratings="ratings"> <!-- here, ratings is in the root dir of project -->
 ```
 
 ### Customizations
-You can use FontAWesome icons. Place to do this is in `ratings.js` file
+You can use FontAwesome icons. Place to do this is in `ratings.js` file
 
 ### License
 MIT
